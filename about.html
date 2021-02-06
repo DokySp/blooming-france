@@ -2,6 +2,7 @@
 <html lang="ko">
 
 
+
 <style>
 
 body {
@@ -43,7 +44,9 @@ nav .text {
 nav .text a:link{text-decoration: none; color: black;}
 nav .text a:visited{text-decoration: none; color: black;}
 nav .text a:hover{text-decoration: none; color: black; font-weight: 00;}
-nav .text .m1 {font-weight: 900;}
+
+/* nav에서 현재 페이지 볼드하는 역할 */
+nav .text .m2 {font-weight: 900;}
 
 
 section {
@@ -57,9 +60,8 @@ section table {
 }
 
 section tr td {
-    width: 280px;
+    width: 900px;
     padding: 20px;
-    text-align: center;
 }
 section.text {
     size: 100px;
@@ -82,6 +84,8 @@ footer div {
 }
 
 @media (max-width: 960px) {
+    body {
+    }
     section table {
         padding: 10px;
     }
@@ -89,8 +93,6 @@ footer div {
         /* width: 33%; */
         height: 100px;
         padding: 1px;
-        /* background-color: red; */
-        text-align: center;
     }
     footer div {
         padding: 20px;
@@ -126,30 +128,24 @@ footer div {
 
 
     <section>
-
+        
         <table>
             <tr>
                 <td>
-                    <a href="./imgView.html?imgName=1.png">
-                        <img src="./assets/1.png" alt="">
-                    </a>
-                </td>
-                <td>
-                    <a href="./imgView.html?imgName=2.png">
-                        <img src="./assets/2.png" alt="">
-                    </a>
-                </td>
-                <td>
-                    <a href="./imgView.html?imgName=3.png">
-                        <img src="./assets/3.png" alt="">
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="./imgView.html?imgName=4.png">
-                        <img src="./assets/4.png" alt="">
-                    </a>
+                    <h1>
+                        Blooming France 또는 꽃 피는 불란서
+                    </h1>
+                    <div>
+                        프렌치를 배우던 친구들이 개화를 한다는 의미에 처음에는 영어로 Blooming France 라는 이름을 사용 하려했지만, 보다 한국적인 이미지를 추구하고 싶어서 꽃 피는 불란서 라는 이름을 사용하게 됐습니다.
+                    </div>
+                    <br><br><br>
+                    <h1>
+                        “새롭지만 친숙한 음식, 전통적인 술과 함께“
+                    </h1>
+                    <div>
+                        처음 팝업 레스토랑 계획은 유학생활동안 함께 지낸 친구들과 졸업 후 의미 있는 시간을 보내 고 싶은 마음에서 시작되었습니다. 여러 국가에서 얻은 경험들과 어린시절을 음식에 녹아내려 가장 새로운 음식을 창조하고 우리의 근본인 한국의 가장 전통적인 술을 곁들여 새롭지만 친
+                        숙한 팝업을 진행하게 됐습니다. <div style="color: red;">나중에 사진을 추가할지도??? ᄊᄀᄂ??</div>
+                    </div>
                 </td>
             </tr>
         </table>

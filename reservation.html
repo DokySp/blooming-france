@@ -43,7 +43,9 @@ nav .text {
 nav .text a:link{text-decoration: none; color: black;}
 nav .text a:visited{text-decoration: none; color: black;}
 nav .text a:hover{text-decoration: none; color: black; font-weight: 00;}
-nav .text .m1 {font-weight: 900;}
+
+/* nav에서 현재 페이지 볼드하는 역할 */
+nav .text .m3 {font-weight: 900;}
 
 
 section {
@@ -57,9 +59,8 @@ section table {
 }
 
 section tr td {
-    width: 280px;
+    width: 900px;
     padding: 20px;
-    text-align: center;
 }
 section.text {
     size: 100px;
@@ -82,6 +83,8 @@ footer div {
 }
 
 @media (max-width: 960px) {
+    body {
+    }
     section table {
         padding: 10px;
     }
@@ -89,8 +92,6 @@ footer div {
         /* width: 33%; */
         height: 100px;
         padding: 1px;
-        /* background-color: red; */
-        text-align: center;
     }
     footer div {
         padding: 20px;
@@ -126,30 +127,27 @@ footer div {
 
 
     <section>
+        
+        <br>
 
         <table>
             <tr>
                 <td>
-                    <a href="./imgView.html?imgName=1.png">
-                        <img src="./assets/1.png" alt="">
-                    </a>
-                </td>
-                <td>
-                    <a href="./imgView.html?imgName=2.png">
-                        <img src="./assets/2.png" alt="">
-                    </a>
-                </td>
-                <td>
-                    <a href="./imgView.html?imgName=3.png">
-                        <img src="./assets/3.png" alt="">
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="./imgView.html?imgName=4.png">
-                        <img src="./assets/4.png" alt="">
-                    </a>
+                    <div>
+
+
+                        오픈 시간<br><br>
+                        수~일<br><br>
+                        점심: 11:30 ~ 14:30<br><br>
+                        저녁: 5:30 ~ 21:00<br><br>
+                        *특정 요일에 따라서 판매하는 메뉴가 다를 수도 있습니다<br><br>
+                        <div style="color: red;">이부분은 차트로 다시 정리해서 들어 갈수도 있어</div><br><br>
+                        예약 문의<br><br>
+                        Open kakao: 꽃 피는 불란서<br><br>
+                        Instagram DM: blooming_france<br><br>
+
+
+                    </div>
                 </td>
             </tr>
         </table>

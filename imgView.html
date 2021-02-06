@@ -1,0 +1,62 @@
+<html>
+
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            background-color: #333333;
+        }
+        table {
+            width: 100%;
+            height: 100%;
+        }
+
+        
+        div.xmark img {
+            padding: 20px;
+            width: 40px;
+        }
+        img#viewer {
+            width: 100%;
+        }
+        div {
+            position: fixed;
+        }
+    </style>
+
+    <body>
+
+        <div class="xmark">
+            <a href="#" onclick=backPress()>
+                <img src="./assets/xmark.png" alt="">
+            </a>
+        </div>
+
+        <table>
+            <tr>
+                <td>
+                    <a href="#" onclick=backPress()>
+                        <img id="viewer" src="" alt="">
+                    </a>
+                </td>
+            </tr>
+        </table>
+        
+    </body>
+
+    <script>
+        var aa = document.location.href;
+        var bb = aa.split("?")[1];
+        var cc = bb.split("imgName=")[1];
+        cc = "./assets/" + cc;
+        console.log(cc);
+    
+        document.getElementById("viewer").src = cc;
+
+        function backPress(){
+            history.back();
+        }
+    </script>
+</html>
+
+
