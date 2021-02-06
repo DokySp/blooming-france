@@ -27,7 +27,8 @@
     <body>
 
         <div class="xmark">
-            <a href="#" onclick="backPress();">
+            <!-- 사파리 history.back() 호환 문제로 수정 -->
+            <a href="http://doky.space/blooming-france/">
                 <img src="./assets/xmark.png" alt="">
             </a>
         </div>
@@ -35,7 +36,7 @@
         <table>
             <tr>
                 <td>
-                    <a href="#" onclick="backPress();">
+                    <a href="http://doky.space/blooming-france/">
                         <img id="viewer" src="" alt="">
                     </a>
                 </td>
@@ -52,10 +53,6 @@
         console.log(cc);
     
         document.getElementById("viewer").src = cc;
-
-        function backPress(){
-            history.back();
-        }
     </script>
 </html>
 
