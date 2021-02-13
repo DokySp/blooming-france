@@ -4,6 +4,11 @@
 
 <style>
 
+@font-face {
+    font-family: 'kpnb';
+    src: url("./assets/kpnb.otf");
+}
+
 body {
     padding: 0px;
     margin: 0px;
@@ -37,23 +42,32 @@ nav tr td {
 nav .text {
     font-size: 20px;
     text-decoration: none;
-    color: black;
+    color: grey;
+    font-family: "kpnb";
 }
 
 nav .text a:link{text-decoration: none; color: black;}
 nav .text a:visited{text-decoration: none; color: black;}
-nav .text a:hover{text-decoration: none; color: black; font-weight: 00;}
-nav .text .m1 {font-weight: 900;}
+nav .text a:hover{text-decoration: none; color: black;}
 
+nav .text .m1 {font-weight: 900; color: black;}
 
 section {
     background-color: white;
+    font-family: "kpnb";
+    text-align: center;
+}
+
+section #menu-pc {
+    display: block;
+}
+section #menu-mobile {
+    display: none;
 }
 
 
 section table {
     margin: 0 auto;
-    
 }
 
 section tr td {
@@ -61,11 +75,11 @@ section tr td {
     padding: 20px;
     text-align: center;
 }
-section.text {
+section .text {
     size: 100px;
 }
 
-section table img {
+section img {
     width: 100%; 
 }
 
@@ -74,6 +88,8 @@ footer {
     bottom: 0; 
     width: 100%;
     height: 150px;
+    font-family: "kpnb";
+    color: white;
 }
 
 footer div {
@@ -95,6 +111,17 @@ footer div {
     footer div {
         padding: 20px;
         width: 80%;
+    }
+
+    section img {
+        width: 95%; 
+    }
+
+    section #menu-pc {
+    display: none;
+    }
+    section #menu-mobile {
+        display: block;
     }
 }
 
@@ -127,46 +154,105 @@ footer div {
 
     <section>
 
-        <table>
-            <tr>
-                <td>
+        <div id="menu-pc">
+            <table>
+                <tr>
+                    <td>
+                        <a href="./imgView.html?imgName=1.png">
+                            <img src="./assets/1.png" alt="">
+                        </a>
+                        <br><br>
+                        형순이의 백간장참치회<br>
+                        (₩110,000 ~ 싯가)
+                    </td>
+                    <td>
+                        <a href="./imgView.html?imgName=2.jpg">
+                            <img src="./assets/2.jpg" alt="">
+                        </a>
+                        <br><br>
+                        김형순의 랍스타와 녹차 갈아넣은 소스<br>
+                        (₩250,000 ~ 싯가)
+                    </td>
+                    <td>
+                        <a href="./imgView.html?imgName=3.png">
+                            <img src="./assets/3.png" alt="">
+                        </a>
+                        <br><br>
+                        전복껍데기볶음밥<br>
+                        (₩320,000 ~ 싯가)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="./imgView.html?imgName=4.jpg">
+                            <img src="./assets/4.jpg" alt="">
+                        </a>
+                        <br><br>
+                        김형순의 살아 숨쉬는 고등어 회<br>
+                        (싯가)
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        <div id="menu-mobile">
+            <table>
+                <tr>
                     <a href="./imgView.html?imgName=1.png">
                         <img src="./assets/1.png" alt="">
                     </a>
-                </td>
-                <td>
-                    <a href="./imgView.html?imgName=2.png">
-                        <img src="./assets/2.png" alt="">
-                    </a>
-                </td>
-                <td>
-                    <a href="./imgView.html?imgName=3.png">
-                        <img src="./assets/3.png" alt="">
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="./imgView.html?imgName=4.png">
-                        <img src="./assets/4.png" alt="">
-                    </a>
-                </td>
-            </tr>
-        </table>
+                    <br><br>
+                    형순이의 백간장참치회<br>
+                    (₩110,000 ~ 싯가)
+                    <br><br><br><br>
+                </tr>
+                <tr>
+                        <a href="./imgView.html?imgName=2.jpg">
+                            <img src="./assets/2.jpg" alt="">
+                        </a>
+                        <br><br>
+                        김형순의 랍스타와 녹차 갈아넣은 소스<br>
+                        (₩250,000 ~ 싯가)
+                        <br><br><br><br>
+                    </tr>
+                    <tr>
+                        <a href="./imgView.html?imgName=3.png">
+                            <img src="./assets/3.png" alt="">
+                        </a>
+                        <br><br>
+                        전복껍데기볶음밥<br>
+                        (₩320,000 ~ 싯가)
+                        <br><br><br><br>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="./imgView.html?imgName=4.jpg">
+                            <img src="./assets/4.jpg" alt="">
+                        </a>
+                        <br><br>
+                        김형순의 살아 숨쉬는 고등어 회<br>
+                        (싯가)
+                        <br><br><br><br>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        
         
         <br><br><br><br><br>
         
     </section>
 
     <footer>
-        <br>
+        <br><br><br>
         <div>
             Contact
             <li>Instagram: @blooming_france</li>
             <li>Email: blooming.france@gmail.com</li>
             <li>Telephone: 010-9968-3121</li>
-
         </div>
+        <br><br><br><br>
     </footer>
 
 </body>

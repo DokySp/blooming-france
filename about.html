@@ -5,6 +5,11 @@
 
 <style>
 
+@font-face {
+    font-family: 'kpnb';
+    src: url("./assets/kpnb.otf");
+}
+
 body {
     padding: 0px;
     margin: 0px;
@@ -39,6 +44,7 @@ nav .text {
     font-size: 20px;
     text-decoration: none;
     color: black;
+    font-family: "kpnb";
 }
 
 nav .text a:link{text-decoration: none; color: black;}
@@ -46,11 +52,13 @@ nav .text a:visited{text-decoration: none; color: black;}
 nav .text a:hover{text-decoration: none; color: black; font-weight: 00;}
 
 /* nav에서 현재 페이지 볼드하는 역할 */
-nav .text .m2 {font-weight: 900;}
+nav .text .m2 {font-weight: 900; color: black;}
 
 
 section {
     background-color: white;
+    text-align: center;
+    font-family: "kpnb";
 }
 
 
@@ -59,8 +67,13 @@ section table {
     
 }
 
+section table.imgSrc {
+    width: 600px;
+    padding: 0px;
+}
+
 section tr td {
-    width: 900px;
+    width: 700px;
     padding: 20px;
 }
 section.text {
@@ -98,6 +111,13 @@ footer div {
         padding: 20px;
         width: 80%;
     }
+    section table.imgSrc {
+        width: 100%;
+    }
+    section table.imgSrc {
+        width: 100%;
+        padding: 10px;
+    }
 }
 
 </style>
@@ -128,7 +148,16 @@ footer div {
 
 
     <section>
+
+        <br>
         
+        <table class="imgSrc">
+            <tr>
+                <td>
+                    <img src="./assets/2.jpg" alt="">
+                </td>
+        </tr>
+        </table>
         <table>
             <tr>
                 <td>
@@ -138,31 +167,46 @@ footer div {
                     <div>
                         프렌치를 배우던 친구들이 개화를 한다는 의미에 처음에는 영어로 Blooming France 라는 이름을 사용 하려했지만, 보다 한국적인 이미지를 추구하고 싶어서 꽃 피는 불란서 라는 이름을 사용하게 됐습니다.
                     </div>
-                    <br><br><br>
+                </td>
+            </tr>
+        </table>
+        
+        <br><br><br><br><br><br><br>
+        <table class="imgSrc">
+            <tr>
+                <td>
+                    <img src="./assets/4.jpg" alt="">
+                </td>
+        </tr>
+        </table>
+        
+        <table>
+            <tr>
+                <td>
                     <h1>
                         “새롭지만 친숙한 음식, 전통적인 술과 함께“
                     </h1>
                     <div>
                         처음 팝업 레스토랑 계획은 유학생활동안 함께 지낸 친구들과 졸업 후 의미 있는 시간을 보내 고 싶은 마음에서 시작되었습니다. 여러 국가에서 얻은 경험들과 어린시절을 음식에 녹아내려 가장 새로운 음식을 창조하고 우리의 근본인 한국의 가장 전통적인 술을 곁들여 새롭지만 친
-                        숙한 팝업을 진행하게 됐습니다. <div style="color: red;">나중에 사진을 추가할지도??? ᄊᄀᄂ??</div>
+                        숙한 팝업을 진행하게 됐습니다.
                     </div>
                 </td>
             </tr>
         </table>
         
-        <br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br>
         
     </section>
 
     <footer>
-        <br>
+        <br><br><br>
         <div>
             Contact
             <li>Instagram: @blooming_france</li>
             <li>Email: blooming.france@gmail.com</li>
             <li>Telephone: 010-9968-3121</li>
-
         </div>
+        <br><br><br>
     </footer>
 
 </body>

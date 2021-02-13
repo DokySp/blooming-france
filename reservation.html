@@ -2,104 +2,124 @@
 <html lang="ko">
 
 
-<style>
+    <style>
 
-body {
-    padding: 0px;
-    margin: 0px;
-    background-color: grey;
-}
+        @font-face {
+            font-family: 'kpnb';
+            src: url("./assets/kpnb.otf");
+        }
+        
+        body {
+            padding: 0px;
+            margin: 0px;
+            background-color: grey;
+        }
+        
+        header {
+            text-align: center;
+            padding: 50px 0 50px;
+            background-color: white;
+        }
+        
+        .headerImage {
+            height: 200px;
+        }
+        
+        nav {
+            background-color: white;
+            height: 70px;
+        }
+        
+        nav table {
+            margin: 0 auto;
+        }
+        
+        nav tr td {
+            text-align: center;
+            width: 100px;
+        }
+        
+        nav .text {
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
+            font-family: "kpnb";
+        }
+        
+        nav .text a:link{text-decoration: none; color: black;}
+        nav .text a:visited{text-decoration: none; color: black;}
+        nav .text a:hover{text-decoration: none; color: black; font-weight: 00;}
 
-header {
-    text-align: center;
-    padding: 50px 0 50px;
-    background-color: white;
-}
-
-.headerImage {
-    height: 200px;
-}
-
-nav {
-    background-color: white;
-    height: 70px;
-}
-
-nav table {
-    margin: 0 auto;
-}
-
-nav tr td {
-    text-align: center;
-    width: 100px;
-}
-
-nav .text {
-    font-size: 20px;
-    text-decoration: none;
-    color: black;
-}
-
-nav .text a:link{text-decoration: none; color: black;}
-nav .text a:visited{text-decoration: none; color: black;}
-nav .text a:hover{text-decoration: none; color: black; font-weight: 00;}
-
-/* nav에서 현재 페이지 볼드하는 역할 */
-nav .text .m3 {font-weight: 900;}
-
-
-section {
-    background-color: white;
-}
-
-
-section table {
-    margin: 0 auto;
-    
-}
-
-section tr td {
-    width: 900px;
-    padding: 20px;
-}
-section.text {
-    size: 100px;
-}
-
-section table img {
-    width: 100%; 
-}
-
-footer {
-    position:relative; 
-    bottom: 0; 
-    width: 100%;
-    height: 150px;
-}
-
-footer div {
-    margin: 0 auto;
-    width: 960px;
-}
-
-@media (max-width: 960px) {
-    body {
-    }
-    section table {
-        padding: 10px;
-    }
-    section tr td {
-        /* width: 33%; */
-        height: 100px;
-        padding: 1px;
-    }
-    footer div {
-        padding: 20px;
-        width: 80%;
-    }
-}
-
-</style>
+        /* nav에서 현재 페이지 볼드하는 역할 */
+        nav .text .m3 {font-weight: 900; color: black;}
+        
+        
+        section {
+            background-color: white;
+            text-align: center;
+            font-family: "kpnb";
+        }
+        
+        
+        section table {
+            margin: 0 auto;
+            
+        }
+        
+        section table.imgSrc {
+            width: 600px;
+            padding: 0px;
+        }
+        
+        section tr td {
+            width: 700px;
+            padding: 20px;
+        }
+        section.text {
+            size: 100px;
+        }
+        
+        section table img {
+            width: 100%; 
+        }
+        
+        footer {
+            position:relative; 
+            bottom: 0; 
+            width: 100%;
+            height: 150px;
+        }
+        
+        footer div {
+            margin: 0 auto;
+            width: 960px;
+        }
+        
+        @media (max-width: 960px) {
+            body {
+            }
+            section table {
+                padding: 10px;
+            }
+            section tr td {
+                /* width: 33%; */
+                height: 100px;
+                padding: 1px;
+            }
+            footer div {
+                padding: 20px;
+                width: 80%;
+            }
+            section table.imgSrc {
+                width: 100%;
+            }
+            section table.imgSrc {
+                width: 100%;
+                padding: 10px;
+            }
+        }
+        
+        </style>
 
 
 <head>
@@ -157,14 +177,14 @@ footer div {
     </section>
 
     <footer>
-        <br>
+        <br><br><br>
         <div>
             Contact
             <li>Instagram: @blooming_france</li>
             <li>Email: blooming.france@gmail.com</li>
             <li>Telephone: 010-9968-3121</li>
-
         </div>
+        <br><br><br>
     </footer>
 
 </body>
