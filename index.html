@@ -4,126 +4,23 @@
 
 <style>
 
-@font-face {
-    font-family: 'kpnb';
-    src: url("./assets/kpnb.otf");
-}
-
-body {
-    padding: 0px;
-    margin: 0px;
-    background-color: grey;
-}
-
-header {
-    text-align: center;
-    padding: 50px 0 50px;
-    background-color: white;
-}
-
-.headerImage {
-    height: 200px;
-}
-
-nav {
-    background-color: white;
-    height: 70px;
-}
-
-nav table {
-    margin: 0 auto;
-}
-
-nav tr td {
-    text-align: center;
-    width: 100px;
-}
-
-nav .text {
-    font-size: 20px;
-    text-decoration: none;
-    color: grey;
-    font-family: "kpnb";
-}
-
-nav .text a:link{text-decoration: none; color: black;}
-nav .text a:visited{text-decoration: none; color: black;}
-nav .text a:hover{text-decoration: none; color: black;}
+@import url("./main.css");
 
 nav .text .m1 {font-weight: 900; color: black;}
+nav .text .m1 a:link{text-decoration: none; color: black;}
+nav .text .m1 a:visited{text-decoration: none; color: black;}
+nav .text .m1 a:hover{text-decoration: none; color: black;}
 
-section {
-    background-color: white;
-    font-family: "kpnb";
-    text-align: center;
-}
+nav .text .m2 {font-weight: 300; color: grey;}
+nav .text .m2 a:link{text-decoration: none; color: grey;}
+nav .text .m2 a:visited{text-decoration: none; color: grey;}
+nav .text .m2 a:hover{text-decoration: none; color: grey;}
 
-section #menu-pc {
-    display: block;
-}
-section #menu-mobile {
-    display: none;
-}
+nav .text .m3 {font-weight: 300; color: grey;}
+nav .text .m3 a:link{text-decoration: none; color: grey;}
+nav .text .m3 a:visited{text-decoration: none; color: grey;}
+nav .text .m3 a:hover{text-decoration: none; color: grey;}
 
-
-section table {
-    margin: 0 auto;
-}
-
-section tr td {
-    width: 280px;
-    padding: 20px;
-    text-align: center;
-}
-section .text {
-    size: 100px;
-}
-
-section img {
-    width: 100%; 
-}
-
-footer {
-    position:relative; 
-    bottom: 0; 
-    width: 100%;
-    height: 150px;
-    font-family: "kpnb";
-    color: white;
-}
-
-footer div {
-    margin: 0 auto;
-    width: 960px;
-}
-
-@media (max-width: 960px) {
-    section table {
-        padding: 10px;
-    }
-    section tr td {
-        /* width: 33%; */
-        height: 100px;
-        padding: 1px;
-        /* background-color: red; */
-        text-align: center;
-    }
-    footer div {
-        padding: 20px;
-        width: 80%;
-    }
-
-    section img {
-        width: 95%; 
-    }
-
-    section #menu-pc {
-    display: none;
-    }
-    section #menu-mobile {
-        display: block;
-    }
-}
 
 </style>
 
@@ -134,7 +31,7 @@ footer div {
 </head>
 
 
-<body>
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
     <header>
         <img class="headerImage" src="./assets/title.png" alt="title">
     </header>
@@ -152,44 +49,44 @@ footer div {
     </nav>
 
 
-    <section>
+    <section class="main">
 
         <div id="menu-pc">
             <table>
                 <tr>
                     <td>
                         <a href="./imgView.html?imgName=1.png">
-                            <img src="./assets/1.png" alt="">
+                            <img src="./assets/thumbnail/1.png" alt="">
                         </a>
                         <br><br>
-                        형순이의 백간장참치회<br>
-                        (₩110,000 ~ 싯가)
+                        <div class="menu-title">김형순의 백간장참치회</div>
+                        <div class="menu-context">(₩110,000 ~ 싯가)</div>
                     </td>
                     <td>
                         <a href="./imgView.html?imgName=2.jpg">
-                            <img src="./assets/2.jpg" alt="">
+                            <img src="./assets/thumbnail/2.jpg" alt="">
                         </a>
                         <br><br>
-                        김형순의 랍스타와 녹차 갈아넣은 소스<br>
-                        (₩250,000 ~ 싯가)
+                        <div class="menu-title">김형순의 랍스타와 녹차 갈아넣은 소스</div>
+                        <div class="menu-context">(₩250,000 ~ 싯가)</div>    
                     </td>
                     <td>
                         <a href="./imgView.html?imgName=3.png">
-                            <img src="./assets/3.png" alt="">
+                            <img src="./assets/thumbnail/3.png" alt="">
                         </a>
                         <br><br>
-                        전복껍데기볶음밥<br>
-                        (₩320,000 ~ 싯가)
+                        <div class="menu-title">전복껍데기볶음밥</div>
+                        <div class="menu-context">(₩320,000 ~ 싯가)</div>  
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <a href="./imgView.html?imgName=4.jpg">
-                            <img src="./assets/4.jpg" alt="">
+                            <img src="./assets/thumbnail/4.jpg" alt="">
                         </a>
                         <br><br>
-                        김형순의 살아 숨쉬는 고등어 회<br>
-                        (싯가)
+                        <div class="menu-title">김형순의 살아 숨쉬는 고등어 회</div>
+                        <div class="menu-context">(싯가)</div>  
                     </td>
                 </tr>
             </table>
@@ -247,7 +144,7 @@ footer div {
     <footer>
         <br><br><br>
         <div>
-            Contact
+            <strong>Contact</strong>
             <li>Instagram: @blooming_france</li>
             <li>Email: blooming.france@gmail.com</li>
             <li>Telephone: 010-9968-3121</li>
