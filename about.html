@@ -23,6 +23,24 @@ nav .text .m3 a:visited{text-decoration: none; color: grey;}
 nav .text .m3 a:hover{text-decoration: none; color: grey;}
 
 
+.headerText1 {
+    display: none;
+}
+.headerText2 {
+    display: block;
+}
+
+@media (max-width: 960px) {
+
+    .headerText1 {
+    display: block;
+    }
+    .headerText2 {
+        display: none;
+    }
+
+}
+
 </style>
 
 
@@ -59,18 +77,38 @@ nav .text .m3 a:hover{text-decoration: none; color: grey;}
                 </td>
         </tr>
         </table>
-        <table>
-            <tr>
-                <td>
-                    <h1>
-                        Blooming France 또는 꽃 피는 불란서
-                    </h1>
-                    <div>
-                        저희 꽃 피는 불란서 팀은 함께 프랑스 요리를 배우며 꿈을 키워나가던 학생들이 그 꿈을 꽃피워보자는 마음으로 시작하게 되었습니다.
-                    </div>
-                </td>
-            </tr>
-        </table>
+
+        <div class="headerText2">
+            <table>
+                <tr>
+                    <td>
+                        <h1>
+                            Blooming France 또는 꽃 피는 불란서
+                        </h1>
+                        <div>
+                            저희 꽃 피는 불란서 팀은 함께 프랑스 요리를 배우며 꿈을 키워나가던 학생들이 그 꿈을 꽃피워보자는 마음으로 시작하게 되었습니다.
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="headerText1">
+            <table>
+                <tr>
+                    <td>
+                        <h1>
+                            Blooming France 또는<br>꽃 피는 불란서
+                        </h1>
+                        <div>
+                            저희 꽃 피는 불란서 팀은 함께 프랑스 요리를 배우며 꿈을 키워나가던 학생들이 그 꿈을 꽃피워보자는 마음으로 시작하게 되었습니다.
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
         
         <br><br><br><br><br><br><br>
         <table class="imgSrc">
