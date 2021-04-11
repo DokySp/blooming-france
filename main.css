@@ -7,13 +7,13 @@ body {
     padding: 0px;
     margin: 0px;
     background-color: grey;
-    color: white;
+    color: black;
 }
 
 header {
     text-align: center;
     padding: 50px 0 50px;
-    background-color: black;
+    background-color: white;
 }
 
 .headerImage {
@@ -21,7 +21,7 @@ header {
 }
 
 nav {
-    background-color: black;
+    background-color: white;
     height: 70px;
 }
 
@@ -43,7 +43,7 @@ nav .text {
 nav .text a:link{text-decoration: none;}
         
 section {
-    background-color: black;
+    background-color: white;
     text-align: center;
     font-family: "kpnb";
 }
@@ -100,7 +100,7 @@ section.main img {
 
 section.main .menu-title{
     font-size: 18px;
-    color: white;
+    color: black;
 }
 
 section.main .menu-context{
@@ -178,7 +178,7 @@ footer div {
 
     section.main .menu-title{
     font-size: 18px;
-    color: white;
+    color: black;
 }
 
 section.main .menu-context{
